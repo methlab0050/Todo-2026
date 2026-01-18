@@ -66,13 +66,32 @@ li {
   margin: 20px;
 }
 
-.task span {
-
+table {
+  border-collapse: collapse;
 }
+
+tr td {
+  padding: 10px;
+}
+
+table td {
+  text-align: center;
+}
+
+tbody tr:hover {
+  background-color: #535bf2;
+}
+
+.add-task {
+  background-color: yellow;  /* Will change colour */
+}
+
 
 .bottom-part {
 
 }
+
+
 
 .logo {
   height: 6em;
