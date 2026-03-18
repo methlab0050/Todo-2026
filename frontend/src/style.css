@@ -2,14 +2,16 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-color: black;
-
-  
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --bg-page: #0f1117;
+  --bg-card: #161b27;
+  --primary-text: #f1f5f9;
+  --testing-blue: #818cf8; /* will most likely be for urgent task to differentiate colour */
+  --testing-other-blue: #4f8ef7;
+  --btn-color: #38bdf8;
 }
 
 a {
@@ -26,6 +28,7 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr;
   height: 100vh;
+  background: var(--bg-page);
 }
 
 h1 {
@@ -48,11 +51,12 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
-  color: white;
+  background: var(--bg-page);
+  color: var(--testing-blue)
 }
 
-.type {
-  background-color: lightblue;
+.main-card {
+  background: var(--bg-card);
   border-style: solid;
   border-color: white;
   border-radius: 8px;
@@ -61,7 +65,7 @@ li {
   flex-direction: column;
 }
 
-.type h2 {
+.main-card h2 {
   text-align: center;
   margin: 20px;
 }
@@ -83,17 +87,18 @@ tbody tr:hover {
 }
 
 .add-task {
-  background-color: yellow;  /* Will change colour */
+  background-color: var(--btn-color);  /* Will change colour */
 }
 
 .course-specific {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 16px;
+  color: var(--testing-other-blue);
 }
 
 .course {
-  background-color: white;
+  background: var(--bg-card);
   border-radius: 8px;
   padding: 20px;
 
@@ -102,6 +107,7 @@ tbody tr:hover {
 .course h2 {
   font-size: 1rem;
   margin-bottom: 14px;
+
 }
 
 
