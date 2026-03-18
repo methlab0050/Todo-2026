@@ -44,7 +44,7 @@ li {
   text-align: center;
 }
 
-.top-part {
+.main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
@@ -86,9 +86,22 @@ tbody tr:hover {
   background-color: yellow;  /* Will change colour */
 }
 
+.course-specific {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 16px;
+}
 
-.bottom-part {
+.course {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
 
+}
+
+.course h2 {
+  font-size: 1rem;
+  margin-bottom: 14px;
 }
 
 
